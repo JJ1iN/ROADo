@@ -1,0 +1,898 @@
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-2] [FilterChainProxy:218] - Securing OPTIONS /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-2] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-2] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [FilterChainProxy:218] - Securing GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [JwtAuthenticationFilter:64] - Unable to verify JWT Token: JWT String argument cannot be null or empty.
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [AnonymousAuthenticationFilter:100] - Set SecurityContextHolder to anonymous SecurityContext
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [SessionManagementFilter:116] - Request requested invalid session id EED546EBB71F3D87D60D4054FB6B9FA3
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [FilterChainProxy:333] - Secured GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [DispatcherServlet:120] - GET "/schedule/month?schdulSe=&year=2024&month=6&date=24", parameters={masked}
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [RequestMappingHandlerMapping:522] - Mapped to egovframework.let.cop.smt.sim.web.EgovIndvdlSchdulManageApiController#EgovIndvdlSchdulManageMonthList(HttpServletRequest, Map, LoginVO)
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl.selectCmmCodeDetail]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@623b0c4e] for JDBC transaction
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@623b0c4e] to manual commit
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f1f5f12]
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@623b0c4e] will be managed by Spring
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [selectCmmCodeDetail:135] - ==>  Preparing: SELECT CODE_ID, CODE, CODE_NM, CODE_DC FROM LETTCCMMNDETAILCODE WHERE USE_AT = 'Y' AND CODE_ID = ?
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [selectCmmCodeDetail:135] - ==> Parameters: COM030(String)
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [selectCmmCodeDetail:135] - <==      Total: 5
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f1f5f12]
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f1f5f12]
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f1f5f12]
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f1f5f12]
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@623b0c4e]
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@623b0c4e] after transaction
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.smt.sim.service.impl.EgovIndvdlSchdulManageServiceImpl.selectIndvdlSchdulManageRetrieve]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@48842ca3] for JDBC transaction
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@48842ca3] to manual commit
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d061d6e]
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@48842ca3] will be managed by Spring
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [selectIndvdlSchdulManageRetrieve:135] - ==>  Preparing: SELECT A.SCHDUL_ID, A.SCHDUL_SE, A.SCHDUL_DEPT_ID, A.SCHDUL_KND_CODE, TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDDHH24MI')SCHDUL_BGNDE, TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDDHH24MI')SCHDUL_ENDDE, A.SCHDUL_NM, A.SCHDUL_CN, A.SCHDUL_PLACE, A.SCHDUL_IPCR_CODE, A.SCHDUL_CHARGER_ID, A.ATCH_FILE_ID, TO_CHAR(A.FRST_REGIST_PNTTM, 'YYYY-MM-DD') FRST_REGIST_PNTTM, A.FRST_REGISTER_ID, TO_CHAR(A.LAST_UPDT_PNTTM, 'YYYY-MM-DD') LAST_UPDT_PNTTM, A.LAST_UPDUSR_ID, A.REPTIT_SE_CODE, (SELECT USER_NM FROM LETTNEMPLYRINFO WHERE ESNTL_ID = A.SCHDUL_CHARGER_ID) USER_NM FROM LETTNSCHDULINFO A WHERE 1=1 AND A.SCHDUL_KND_CODE = '2' AND (? BETWEEN SUBSTRING(TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDD'), 1, 6) AND SUBSTRING(TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDD'), 1, 6) )
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [selectIndvdlSchdulManageRetrieve:135] - ==> Parameters: 202407(String)
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [selectIndvdlSchdulManageRetrieve:135] - <==      Total: 0
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d061d6e]
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d061d6e]
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d061d6e]
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2d061d6e]
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@48842ca3]
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@48842ca3] after transaction
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [RequestResponseBodyMethodProcessor:120] - Writing [egovframework.com.cmm.service.ResultVO@63e17313]
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 24-07-24 00:04:05[http-nio-8080-exec-3] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [FilterChainProxy:218] - Securing GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [JwtAuthenticationFilter:64] - Unable to verify JWT Token: JWT String argument cannot be null or empty.
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [AnonymousAuthenticationFilter:100] - Set SecurityContextHolder to anonymous SecurityContext
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [SessionManagementFilter:116] - Request requested invalid session id EED546EBB71F3D87D60D4054FB6B9FA3
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [FilterChainProxy:333] - Secured GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [DispatcherServlet:120] - GET "/schedule/month?schdulSe=&year=2024&month=6&date=24", parameters={masked}
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [RequestMappingHandlerMapping:522] - Mapped to egovframework.let.cop.smt.sim.web.EgovIndvdlSchdulManageApiController#EgovIndvdlSchdulManageMonthList(HttpServletRequest, Map, LoginVO)
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl.selectCmmCodeDetail]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@7a4b13dc] for JDBC transaction
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7a4b13dc] to manual commit
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@748cf2e5]
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7a4b13dc] will be managed by Spring
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [selectCmmCodeDetail:135] - ==>  Preparing: SELECT CODE_ID, CODE, CODE_NM, CODE_DC FROM LETTCCMMNDETAILCODE WHERE USE_AT = 'Y' AND CODE_ID = ?
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [selectCmmCodeDetail:135] - ==> Parameters: COM030(String)
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [selectCmmCodeDetail:135] - <==      Total: 5
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@748cf2e5]
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@748cf2e5]
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@748cf2e5]
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@748cf2e5]
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@7a4b13dc]
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7a4b13dc] after transaction
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.smt.sim.service.impl.EgovIndvdlSchdulManageServiceImpl.selectIndvdlSchdulManageRetrieve]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@17c6d847] for JDBC transaction
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@17c6d847] to manual commit
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ce0b80]
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@17c6d847] will be managed by Spring
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [selectIndvdlSchdulManageRetrieve:135] - ==>  Preparing: SELECT A.SCHDUL_ID, A.SCHDUL_SE, A.SCHDUL_DEPT_ID, A.SCHDUL_KND_CODE, TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDDHH24MI')SCHDUL_BGNDE, TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDDHH24MI')SCHDUL_ENDDE, A.SCHDUL_NM, A.SCHDUL_CN, A.SCHDUL_PLACE, A.SCHDUL_IPCR_CODE, A.SCHDUL_CHARGER_ID, A.ATCH_FILE_ID, TO_CHAR(A.FRST_REGIST_PNTTM, 'YYYY-MM-DD') FRST_REGIST_PNTTM, A.FRST_REGISTER_ID, TO_CHAR(A.LAST_UPDT_PNTTM, 'YYYY-MM-DD') LAST_UPDT_PNTTM, A.LAST_UPDUSR_ID, A.REPTIT_SE_CODE, (SELECT USER_NM FROM LETTNEMPLYRINFO WHERE ESNTL_ID = A.SCHDUL_CHARGER_ID) USER_NM FROM LETTNSCHDULINFO A WHERE 1=1 AND A.SCHDUL_KND_CODE = '2' AND (? BETWEEN SUBSTRING(TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDD'), 1, 6) AND SUBSTRING(TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDD'), 1, 6) )
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [selectIndvdlSchdulManageRetrieve:135] - ==> Parameters: 202407(String)
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [selectIndvdlSchdulManageRetrieve:135] - <==      Total: 0
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ce0b80]
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ce0b80]
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ce0b80]
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ce0b80]
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@17c6d847]
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@17c6d847] after transaction
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [RequestResponseBodyMethodProcessor:120] - Writing [egovframework.com.cmm.service.ResultVO@74579d32]
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 24-07-24 00:04:09[http-nio-8080-exec-8] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-5] [FilterChainProxy:218] - Securing OPTIONS /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-5] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-5] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [FilterChainProxy:218] - Securing GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [JwtAuthenticationFilter:64] - Unable to verify JWT Token: JWT String argument cannot be null or empty.
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [AnonymousAuthenticationFilter:100] - Set SecurityContextHolder to anonymous SecurityContext
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [SessionManagementFilter:116] - Request requested invalid session id EED546EBB71F3D87D60D4054FB6B9FA3
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [FilterChainProxy:333] - Secured GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [DispatcherServlet:120] - GET "/schedule/month?schdulSe=&year=2024&month=6&date=24", parameters={masked}
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [RequestMappingHandlerMapping:522] - Mapped to egovframework.let.cop.smt.sim.web.EgovIndvdlSchdulManageApiController#EgovIndvdlSchdulManageMonthList(HttpServletRequest, Map, LoginVO)
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl.selectCmmCodeDetail]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@7c94a16e] for JDBC transaction
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7c94a16e] to manual commit
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2be474ce]
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7c94a16e] will be managed by Spring
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [selectCmmCodeDetail:135] - ==>  Preparing: SELECT CODE_ID, CODE, CODE_NM, CODE_DC FROM LETTCCMMNDETAILCODE WHERE USE_AT = 'Y' AND CODE_ID = ?
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [selectCmmCodeDetail:135] - ==> Parameters: COM030(String)
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [selectCmmCodeDetail:135] - <==      Total: 5
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2be474ce]
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2be474ce]
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2be474ce]
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2be474ce]
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@7c94a16e]
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7c94a16e] after transaction
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.smt.sim.service.impl.EgovIndvdlSchdulManageServiceImpl.selectIndvdlSchdulManageRetrieve]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@4eb51e4a] for JDBC transaction
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4eb51e4a] to manual commit
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@467f4156]
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4eb51e4a] will be managed by Spring
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [selectIndvdlSchdulManageRetrieve:135] - ==>  Preparing: SELECT A.SCHDUL_ID, A.SCHDUL_SE, A.SCHDUL_DEPT_ID, A.SCHDUL_KND_CODE, TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDDHH24MI')SCHDUL_BGNDE, TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDDHH24MI')SCHDUL_ENDDE, A.SCHDUL_NM, A.SCHDUL_CN, A.SCHDUL_PLACE, A.SCHDUL_IPCR_CODE, A.SCHDUL_CHARGER_ID, A.ATCH_FILE_ID, TO_CHAR(A.FRST_REGIST_PNTTM, 'YYYY-MM-DD') FRST_REGIST_PNTTM, A.FRST_REGISTER_ID, TO_CHAR(A.LAST_UPDT_PNTTM, 'YYYY-MM-DD') LAST_UPDT_PNTTM, A.LAST_UPDUSR_ID, A.REPTIT_SE_CODE, (SELECT USER_NM FROM LETTNEMPLYRINFO WHERE ESNTL_ID = A.SCHDUL_CHARGER_ID) USER_NM FROM LETTNSCHDULINFO A WHERE 1=1 AND A.SCHDUL_KND_CODE = '2' AND (? BETWEEN SUBSTRING(TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDD'), 1, 6) AND SUBSTRING(TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDD'), 1, 6) )
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [selectIndvdlSchdulManageRetrieve:135] - ==> Parameters: 202407(String)
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [selectIndvdlSchdulManageRetrieve:135] - <==      Total: 0
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@467f4156]
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@467f4156]
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@467f4156]
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@467f4156]
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@4eb51e4a]
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4eb51e4a] after transaction
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [RequestResponseBodyMethodProcessor:120] - Writing [egovframework.com.cmm.service.ResultVO@1f688c94]
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 24-07-24 00:04:14[http-nio-8080-exec-4] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-7] [FilterChainProxy:218] - Securing OPTIONS /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-7] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-7] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [FilterChainProxy:218] - Securing GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [JwtAuthenticationFilter:64] - Unable to verify JWT Token: JWT String argument cannot be null or empty.
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [AnonymousAuthenticationFilter:100] - Set SecurityContextHolder to anonymous SecurityContext
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [SessionManagementFilter:116] - Request requested invalid session id EED546EBB71F3D87D60D4054FB6B9FA3
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [FilterChainProxy:333] - Secured GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [DispatcherServlet:120] - GET "/schedule/month?schdulSe=&year=2024&month=6&date=24", parameters={masked}
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [RequestMappingHandlerMapping:522] - Mapped to egovframework.let.cop.smt.sim.web.EgovIndvdlSchdulManageApiController#EgovIndvdlSchdulManageMonthList(HttpServletRequest, Map, LoginVO)
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl.selectCmmCodeDetail]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@7850f651] for JDBC transaction
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7850f651] to manual commit
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bddac6a]
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7850f651] will be managed by Spring
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [selectCmmCodeDetail:135] - ==>  Preparing: SELECT CODE_ID, CODE, CODE_NM, CODE_DC FROM LETTCCMMNDETAILCODE WHERE USE_AT = 'Y' AND CODE_ID = ?
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [selectCmmCodeDetail:135] - ==> Parameters: COM030(String)
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [selectCmmCodeDetail:135] - <==      Total: 5
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bddac6a]
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bddac6a]
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bddac6a]
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bddac6a]
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@7850f651]
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7850f651] after transaction
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.smt.sim.service.impl.EgovIndvdlSchdulManageServiceImpl.selectIndvdlSchdulManageRetrieve]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@61868bab] for JDBC transaction
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@61868bab] to manual commit
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75ec50d]
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@61868bab] will be managed by Spring
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [selectIndvdlSchdulManageRetrieve:135] - ==>  Preparing: SELECT A.SCHDUL_ID, A.SCHDUL_SE, A.SCHDUL_DEPT_ID, A.SCHDUL_KND_CODE, TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDDHH24MI')SCHDUL_BGNDE, TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDDHH24MI')SCHDUL_ENDDE, A.SCHDUL_NM, A.SCHDUL_CN, A.SCHDUL_PLACE, A.SCHDUL_IPCR_CODE, A.SCHDUL_CHARGER_ID, A.ATCH_FILE_ID, TO_CHAR(A.FRST_REGIST_PNTTM, 'YYYY-MM-DD') FRST_REGIST_PNTTM, A.FRST_REGISTER_ID, TO_CHAR(A.LAST_UPDT_PNTTM, 'YYYY-MM-DD') LAST_UPDT_PNTTM, A.LAST_UPDUSR_ID, A.REPTIT_SE_CODE, (SELECT USER_NM FROM LETTNEMPLYRINFO WHERE ESNTL_ID = A.SCHDUL_CHARGER_ID) USER_NM FROM LETTNSCHDULINFO A WHERE 1=1 AND A.SCHDUL_KND_CODE = '2' AND (? BETWEEN SUBSTRING(TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDD'), 1, 6) AND SUBSTRING(TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDD'), 1, 6) )
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [selectIndvdlSchdulManageRetrieve:135] - ==> Parameters: 202407(String)
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [selectIndvdlSchdulManageRetrieve:135] - <==      Total: 0
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75ec50d]
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75ec50d]
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75ec50d]
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@75ec50d]
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@61868bab]
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@61868bab] after transaction
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [RequestResponseBodyMethodProcessor:120] - Writing [egovframework.com.cmm.service.ResultVO@5bc375d7]
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 24-07-24 00:04:31[http-nio-8080-exec-6] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-9] [FilterChainProxy:218] - Securing OPTIONS /auth/login-jwt
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-9] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-9] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [FilterChainProxy:218] - Securing POST /auth/login-jwt
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [JwtAuthenticationFilter:64] - Unable to verify JWT Token: JWT String argument cannot be null or empty.
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [AnonymousAuthenticationFilter:100] - Set SecurityContextHolder to anonymous SecurityContext
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [SessionManagementFilter:116] - Request requested invalid session id EED546EBB71F3D87D60D4054FB6B9FA3
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [FilterChainProxy:333] - Secured POST /auth/login-jwt
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [DispatcherServlet:120] - POST "/auth/login-jwt", parameters={}
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [RequestMappingHandlerMapping:522] - Mapped to egovframework.let.uat.uia.web.EgovLoginApiController#actionLoginJWT(LoginVO, HttpServletRequest, ModelMap)
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [RequestResponseBodyMethodProcessor:120] - Read "application/json;charset=UTF-8" to [egovframework.com.cmm.LoginVO@f02fdc2]
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.uat.uia.service.impl.EgovLoginServiceImpl.actionLogin]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@634a254c] for JDBC transaction
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@634a254c] to manual commit
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74ea2e2b]
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@634a254c] will be managed by Spring
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [actionLogin:135] - ==>  Preparing: SELECT EMPLYR_ID AS id , USER_NM AS name , PASSWORD AS password , IHIDNUM AS ihidNum , EMAIL_ADRES AS email , 'USR' AS userSe , ORGNZT_ID AS orgnztId , ESNTL_ID AS uniqId FROM LETTNEMPLYRINFO WHERE EMPLYR_ID = ? AND PASSWORD = ? AND EMPLYR_STTUS_CODE = 'P'
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [actionLogin:135] - ==> Parameters: admin(String), JfQ7FIatlaE5jj7rPYO8QBABX8yb7bNbQy4AKY1QIfc=(String)
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [actionLogin:135] - <==      Total: 1
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74ea2e2b]
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74ea2e2b]
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74ea2e2b]
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74ea2e2b]
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@634a254c]
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@634a254c] after transaction
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [EgovLoginApiController:133] - ===>>> loginVO.getUserSe() = USR
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [EgovLoginApiController:134] - ===>>> loginVO.getId() = admin
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [EgovLoginApiController:135] - ===>>> loginVO.getPassword() = JfQ7FIatlaE5jj7rPYO8QBABX8yb7bNbQy4AKY1QIfc=
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [EgovJwtTokenUtil:75] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [EgovLoginApiController:140] - Dec jwtToken username = USR
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [RequestResponseBodyMethodProcessor:120] - Writing [{resultCode=200, resultVO=egovframework.com.cmm.LoginVO@3cb754fe, jToken=eyJhbGciOiJIUzUxMiJ9.eyJzdW (truncated)...]
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 24-07-24 00:04:34[http-nio-8080-exec-10] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-1] [FilterChainProxy:218] - Securing OPTIONS /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-1] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-1] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-2] [FilterChainProxy:218] - Securing OPTIONS /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-2] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-2] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [FilterChainProxy:218] - Securing GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [JwtAuthenticationFilter:62] - ===>>> id = admin
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [JwtAuthenticationFilter:70] - jwtToken validated
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [ChangeSessionIdAuthenticationStrategy:99] - Changed session id from D43ADA23F0267AF25FDE3F5501E1D90C
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [FilterChainProxy:333] - Secured GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [DispatcherServlet:120] - GET "/schedule/month?schdulSe=&year=2024&month=6&date=24", parameters={masked}
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [RequestMappingHandlerMapping:522] - Mapped to egovframework.let.cop.smt.sim.web.EgovIndvdlSchdulManageApiController#EgovIndvdlSchdulManageMonthList(HttpServletRequest, Map, LoginVO)
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl.selectCmmCodeDetail]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@373beda1] for JDBC transaction
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@373beda1] to manual commit
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4cfece95]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@373beda1] will be managed by Spring
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [selectCmmCodeDetail:135] - ==>  Preparing: SELECT CODE_ID, CODE, CODE_NM, CODE_DC FROM LETTCCMMNDETAILCODE WHERE USE_AT = 'Y' AND CODE_ID = ?
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [selectCmmCodeDetail:135] - ==> Parameters: COM030(String)
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [selectCmmCodeDetail:135] - <==      Total: 5
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4cfece95]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4cfece95]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4cfece95]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4cfece95]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@373beda1]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@373beda1] after transaction
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.smt.sim.service.impl.EgovIndvdlSchdulManageServiceImpl.selectIndvdlSchdulManageRetrieve]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@2e00a43f] for JDBC transaction
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2e00a43f] to manual commit
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14304d0c]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2e00a43f] will be managed by Spring
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [selectIndvdlSchdulManageRetrieve:135] - ==>  Preparing: SELECT A.SCHDUL_ID, A.SCHDUL_SE, A.SCHDUL_DEPT_ID, A.SCHDUL_KND_CODE, TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDDHH24MI')SCHDUL_BGNDE, TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDDHH24MI')SCHDUL_ENDDE, A.SCHDUL_NM, A.SCHDUL_CN, A.SCHDUL_PLACE, A.SCHDUL_IPCR_CODE, A.SCHDUL_CHARGER_ID, A.ATCH_FILE_ID, TO_CHAR(A.FRST_REGIST_PNTTM, 'YYYY-MM-DD') FRST_REGIST_PNTTM, A.FRST_REGISTER_ID, TO_CHAR(A.LAST_UPDT_PNTTM, 'YYYY-MM-DD') LAST_UPDT_PNTTM, A.LAST_UPDUSR_ID, A.REPTIT_SE_CODE, (SELECT USER_NM FROM LETTNEMPLYRINFO WHERE ESNTL_ID = A.SCHDUL_CHARGER_ID) USER_NM FROM LETTNSCHDULINFO A WHERE 1=1 AND A.SCHDUL_KND_CODE = '2' AND (? BETWEEN SUBSTRING(TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDD'), 1, 6) AND SUBSTRING(TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDD'), 1, 6) )
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [selectIndvdlSchdulManageRetrieve:135] - ==> Parameters: 202407(String)
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [selectIndvdlSchdulManageRetrieve:135] - <==      Total: 0
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14304d0c]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14304d0c]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14304d0c]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14304d0c]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@2e00a43f]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2e00a43f] after transaction
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [RequestResponseBodyMethodProcessor:120] - Writing [egovframework.com.cmm.service.ResultVO@421ed17a]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-3] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [FilterChainProxy:218] - Securing GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [JwtAuthenticationFilter:62] - ===>>> id = admin
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [JwtAuthenticationFilter:70] - jwtToken validated
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [FilterChainProxy:333] - Secured GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [DispatcherServlet:120] - GET "/schedule/month?schdulSe=&year=2024&month=6&date=24", parameters={masked}
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [RequestMappingHandlerMapping:522] - Mapped to egovframework.let.cop.smt.sim.web.EgovIndvdlSchdulManageApiController#EgovIndvdlSchdulManageMonthList(HttpServletRequest, Map, LoginVO)
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl.selectCmmCodeDetail]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@d49832f] for JDBC transaction
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@d49832f] to manual commit
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13cd5a9c]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@d49832f] will be managed by Spring
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [selectCmmCodeDetail:135] - ==>  Preparing: SELECT CODE_ID, CODE, CODE_NM, CODE_DC FROM LETTCCMMNDETAILCODE WHERE USE_AT = 'Y' AND CODE_ID = ?
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [selectCmmCodeDetail:135] - ==> Parameters: COM030(String)
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [selectCmmCodeDetail:135] - <==      Total: 5
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13cd5a9c]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13cd5a9c]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13cd5a9c]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13cd5a9c]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@d49832f]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@d49832f] after transaction
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.smt.sim.service.impl.EgovIndvdlSchdulManageServiceImpl.selectIndvdlSchdulManageRetrieve]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@2f5f0fa1] for JDBC transaction
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2f5f0fa1] to manual commit
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@563fb96c]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2f5f0fa1] will be managed by Spring
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [selectIndvdlSchdulManageRetrieve:135] - ==>  Preparing: SELECT A.SCHDUL_ID, A.SCHDUL_SE, A.SCHDUL_DEPT_ID, A.SCHDUL_KND_CODE, TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDDHH24MI')SCHDUL_BGNDE, TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDDHH24MI')SCHDUL_ENDDE, A.SCHDUL_NM, A.SCHDUL_CN, A.SCHDUL_PLACE, A.SCHDUL_IPCR_CODE, A.SCHDUL_CHARGER_ID, A.ATCH_FILE_ID, TO_CHAR(A.FRST_REGIST_PNTTM, 'YYYY-MM-DD') FRST_REGIST_PNTTM, A.FRST_REGISTER_ID, TO_CHAR(A.LAST_UPDT_PNTTM, 'YYYY-MM-DD') LAST_UPDT_PNTTM, A.LAST_UPDUSR_ID, A.REPTIT_SE_CODE, (SELECT USER_NM FROM LETTNEMPLYRINFO WHERE ESNTL_ID = A.SCHDUL_CHARGER_ID) USER_NM FROM LETTNSCHDULINFO A WHERE 1=1 AND A.SCHDUL_KND_CODE = '2' AND (? BETWEEN SUBSTRING(TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDD'), 1, 6) AND SUBSTRING(TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDD'), 1, 6) )
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [selectIndvdlSchdulManageRetrieve:135] - ==> Parameters: 202407(String)
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [selectIndvdlSchdulManageRetrieve:135] - <==      Total: 0
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@563fb96c]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@563fb96c]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@563fb96c]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@563fb96c]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@2f5f0fa1]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2f5f0fa1] after transaction
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [RequestResponseBodyMethodProcessor:120] - Writing [egovframework.com.cmm.service.ResultVO@5fae780]
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 24-07-24 00:04:36[http-nio-8080-exec-8] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-10] [FilterChainProxy:218] - Securing OPTIONS /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-9] [FilterChainProxy:218] - Securing OPTIONS /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-10] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-9] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-10] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-9] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [FilterChainProxy:218] - Securing GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [JwtAuthenticationFilter:62] - ===>>> id = admin
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [JwtAuthenticationFilter:70] - jwtToken validated
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [ChangeSessionIdAuthenticationStrategy:99] - Changed session id from FAD2A540FDE0209A0411901981EFCC40
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [FilterChainProxy:333] - Secured GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [DispatcherServlet:120] - GET "/schedule/month?schdulSe=&year=2024&month=6&date=24", parameters={masked}
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [RequestMappingHandlerMapping:522] - Mapped to egovframework.let.cop.smt.sim.web.EgovIndvdlSchdulManageApiController#EgovIndvdlSchdulManageMonthList(HttpServletRequest, Map, LoginVO)
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl.selectCmmCodeDetail]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@17faed77] for JDBC transaction
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@17faed77] to manual commit
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1458d99f]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@17faed77] will be managed by Spring
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [selectCmmCodeDetail:135] - ==>  Preparing: SELECT CODE_ID, CODE, CODE_NM, CODE_DC FROM LETTCCMMNDETAILCODE WHERE USE_AT = 'Y' AND CODE_ID = ?
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [selectCmmCodeDetail:135] - ==> Parameters: COM030(String)
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [selectCmmCodeDetail:135] - <==      Total: 5
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1458d99f]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1458d99f]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1458d99f]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1458d99f]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@17faed77]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@17faed77] after transaction
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.smt.sim.service.impl.EgovIndvdlSchdulManageServiceImpl.selectIndvdlSchdulManageRetrieve]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@4923d184] for JDBC transaction
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4923d184] to manual commit
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1be56d1e]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4923d184] will be managed by Spring
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [selectIndvdlSchdulManageRetrieve:135] - ==>  Preparing: SELECT A.SCHDUL_ID, A.SCHDUL_SE, A.SCHDUL_DEPT_ID, A.SCHDUL_KND_CODE, TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDDHH24MI')SCHDUL_BGNDE, TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDDHH24MI')SCHDUL_ENDDE, A.SCHDUL_NM, A.SCHDUL_CN, A.SCHDUL_PLACE, A.SCHDUL_IPCR_CODE, A.SCHDUL_CHARGER_ID, A.ATCH_FILE_ID, TO_CHAR(A.FRST_REGIST_PNTTM, 'YYYY-MM-DD') FRST_REGIST_PNTTM, A.FRST_REGISTER_ID, TO_CHAR(A.LAST_UPDT_PNTTM, 'YYYY-MM-DD') LAST_UPDT_PNTTM, A.LAST_UPDUSR_ID, A.REPTIT_SE_CODE, (SELECT USER_NM FROM LETTNEMPLYRINFO WHERE ESNTL_ID = A.SCHDUL_CHARGER_ID) USER_NM FROM LETTNSCHDULINFO A WHERE 1=1 AND A.SCHDUL_KND_CODE = '2' AND (? BETWEEN SUBSTRING(TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDD'), 1, 6) AND SUBSTRING(TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDD'), 1, 6) )
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [selectIndvdlSchdulManageRetrieve:135] - ==> Parameters: 202407(String)
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [selectIndvdlSchdulManageRetrieve:135] - <==      Total: 0
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1be56d1e]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1be56d1e]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1be56d1e]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1be56d1e]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@4923d184]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4923d184] after transaction
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [RequestResponseBodyMethodProcessor:120] - Writing [egovframework.com.cmm.service.ResultVO@364d2cbd]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-1] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [FilterChainProxy:218] - Securing GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [JwtAuthenticationFilter:62] - ===>>> id = admin
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [JwtAuthenticationFilter:70] - jwtToken validated
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [FilterChainProxy:333] - Secured GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [DispatcherServlet:120] - GET "/schedule/month?schdulSe=&year=2024&month=6&date=24", parameters={masked}
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [RequestMappingHandlerMapping:522] - Mapped to egovframework.let.cop.smt.sim.web.EgovIndvdlSchdulManageApiController#EgovIndvdlSchdulManageMonthList(HttpServletRequest, Map, LoginVO)
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl.selectCmmCodeDetail]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@384ba344] for JDBC transaction
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@384ba344] to manual commit
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cd1249b]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@384ba344] will be managed by Spring
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [selectCmmCodeDetail:135] - ==>  Preparing: SELECT CODE_ID, CODE, CODE_NM, CODE_DC FROM LETTCCMMNDETAILCODE WHERE USE_AT = 'Y' AND CODE_ID = ?
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [selectCmmCodeDetail:135] - ==> Parameters: COM030(String)
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [selectCmmCodeDetail:135] - <==      Total: 5
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cd1249b]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cd1249b]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cd1249b]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cd1249b]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@384ba344]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@384ba344] after transaction
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.smt.sim.service.impl.EgovIndvdlSchdulManageServiceImpl.selectIndvdlSchdulManageRetrieve]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@5d7bd5d0] for JDBC transaction
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5d7bd5d0] to manual commit
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68bbd718]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5d7bd5d0] will be managed by Spring
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [selectIndvdlSchdulManageRetrieve:135] - ==>  Preparing: SELECT A.SCHDUL_ID, A.SCHDUL_SE, A.SCHDUL_DEPT_ID, A.SCHDUL_KND_CODE, TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDDHH24MI')SCHDUL_BGNDE, TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDDHH24MI')SCHDUL_ENDDE, A.SCHDUL_NM, A.SCHDUL_CN, A.SCHDUL_PLACE, A.SCHDUL_IPCR_CODE, A.SCHDUL_CHARGER_ID, A.ATCH_FILE_ID, TO_CHAR(A.FRST_REGIST_PNTTM, 'YYYY-MM-DD') FRST_REGIST_PNTTM, A.FRST_REGISTER_ID, TO_CHAR(A.LAST_UPDT_PNTTM, 'YYYY-MM-DD') LAST_UPDT_PNTTM, A.LAST_UPDUSR_ID, A.REPTIT_SE_CODE, (SELECT USER_NM FROM LETTNEMPLYRINFO WHERE ESNTL_ID = A.SCHDUL_CHARGER_ID) USER_NM FROM LETTNSCHDULINFO A WHERE 1=1 AND A.SCHDUL_KND_CODE = '2' AND (? BETWEEN SUBSTRING(TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDD'), 1, 6) AND SUBSTRING(TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDD'), 1, 6) )
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [selectIndvdlSchdulManageRetrieve:135] - ==> Parameters: 202407(String)
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [selectIndvdlSchdulManageRetrieve:135] - <==      Total: 0
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68bbd718]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68bbd718]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68bbd718]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68bbd718]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@5d7bd5d0]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@5d7bd5d0] after transaction
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [RequestResponseBodyMethodProcessor:120] - Writing [egovframework.com.cmm.service.ResultVO@6ee90f3e]
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 24-07-24 00:08:00[http-nio-8080-exec-2] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-3] [FilterChainProxy:218] - Securing OPTIONS /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-3] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-8] [FilterChainProxy:218] - Securing OPTIONS /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-8] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-8] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-3] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [FilterChainProxy:218] - Securing GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [JwtAuthenticationFilter:62] - ===>>> id = admin
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [JwtAuthenticationFilter:70] - jwtToken validated
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [ChangeSessionIdAuthenticationStrategy:99] - Changed session id from 8F84DCBC40A6B5D709D6172B2CF01769
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [FilterChainProxy:333] - Secured GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [DispatcherServlet:120] - GET "/schedule/month?schdulSe=&year=2024&month=6&date=24", parameters={masked}
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [RequestMappingHandlerMapping:522] - Mapped to egovframework.let.cop.smt.sim.web.EgovIndvdlSchdulManageApiController#EgovIndvdlSchdulManageMonthList(HttpServletRequest, Map, LoginVO)
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl.selectCmmCodeDetail]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@60c89b2] for JDBC transaction
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@60c89b2] to manual commit
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5afd394e]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@60c89b2] will be managed by Spring
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [selectCmmCodeDetail:135] - ==>  Preparing: SELECT CODE_ID, CODE, CODE_NM, CODE_DC FROM LETTCCMMNDETAILCODE WHERE USE_AT = 'Y' AND CODE_ID = ?
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [selectCmmCodeDetail:135] - ==> Parameters: COM030(String)
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [selectCmmCodeDetail:135] - <==      Total: 5
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5afd394e]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5afd394e]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5afd394e]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5afd394e]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@60c89b2]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@60c89b2] after transaction
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.smt.sim.service.impl.EgovIndvdlSchdulManageServiceImpl.selectIndvdlSchdulManageRetrieve]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@3cb99d2d] for JDBC transaction
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3cb99d2d] to manual commit
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@fbdf4bd]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3cb99d2d] will be managed by Spring
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [selectIndvdlSchdulManageRetrieve:135] - ==>  Preparing: SELECT A.SCHDUL_ID, A.SCHDUL_SE, A.SCHDUL_DEPT_ID, A.SCHDUL_KND_CODE, TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDDHH24MI')SCHDUL_BGNDE, TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDDHH24MI')SCHDUL_ENDDE, A.SCHDUL_NM, A.SCHDUL_CN, A.SCHDUL_PLACE, A.SCHDUL_IPCR_CODE, A.SCHDUL_CHARGER_ID, A.ATCH_FILE_ID, TO_CHAR(A.FRST_REGIST_PNTTM, 'YYYY-MM-DD') FRST_REGIST_PNTTM, A.FRST_REGISTER_ID, TO_CHAR(A.LAST_UPDT_PNTTM, 'YYYY-MM-DD') LAST_UPDT_PNTTM, A.LAST_UPDUSR_ID, A.REPTIT_SE_CODE, (SELECT USER_NM FROM LETTNEMPLYRINFO WHERE ESNTL_ID = A.SCHDUL_CHARGER_ID) USER_NM FROM LETTNSCHDULINFO A WHERE 1=1 AND A.SCHDUL_KND_CODE = '2' AND (? BETWEEN SUBSTRING(TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDD'), 1, 6) AND SUBSTRING(TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDD'), 1, 6) )
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [selectIndvdlSchdulManageRetrieve:135] - ==> Parameters: 202407(String)
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [selectIndvdlSchdulManageRetrieve:135] - <==      Total: 0
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@fbdf4bd]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@fbdf4bd]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@fbdf4bd]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@fbdf4bd]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@3cb99d2d]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3cb99d2d] after transaction
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [RequestResponseBodyMethodProcessor:120] - Writing [egovframework.com.cmm.service.ResultVO@e0f15b6]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-5] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [FilterChainProxy:218] - Securing GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [JwtAuthenticationFilter:62] - ===>>> id = admin
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [JwtAuthenticationFilter:70] - jwtToken validated
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [FilterChainProxy:333] - Secured GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [DispatcherServlet:120] - GET "/schedule/month?schdulSe=&year=2024&month=6&date=24", parameters={masked}
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [RequestMappingHandlerMapping:522] - Mapped to egovframework.let.cop.smt.sim.web.EgovIndvdlSchdulManageApiController#EgovIndvdlSchdulManageMonthList(HttpServletRequest, Map, LoginVO)
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl.selectCmmCodeDetail]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@4a09e105] for JDBC transaction
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4a09e105] to manual commit
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e7b4023]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4a09e105] will be managed by Spring
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [selectCmmCodeDetail:135] - ==>  Preparing: SELECT CODE_ID, CODE, CODE_NM, CODE_DC FROM LETTCCMMNDETAILCODE WHERE USE_AT = 'Y' AND CODE_ID = ?
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [selectCmmCodeDetail:135] - ==> Parameters: COM030(String)
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [selectCmmCodeDetail:135] - <==      Total: 5
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e7b4023]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e7b4023]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e7b4023]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e7b4023]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@4a09e105]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4a09e105] after transaction
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.smt.sim.service.impl.EgovIndvdlSchdulManageServiceImpl.selectIndvdlSchdulManageRetrieve]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@4030f37d] for JDBC transaction
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4030f37d] to manual commit
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@646ed900]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4030f37d] will be managed by Spring
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [selectIndvdlSchdulManageRetrieve:135] - ==>  Preparing: SELECT A.SCHDUL_ID, A.SCHDUL_SE, A.SCHDUL_DEPT_ID, A.SCHDUL_KND_CODE, TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDDHH24MI')SCHDUL_BGNDE, TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDDHH24MI')SCHDUL_ENDDE, A.SCHDUL_NM, A.SCHDUL_CN, A.SCHDUL_PLACE, A.SCHDUL_IPCR_CODE, A.SCHDUL_CHARGER_ID, A.ATCH_FILE_ID, TO_CHAR(A.FRST_REGIST_PNTTM, 'YYYY-MM-DD') FRST_REGIST_PNTTM, A.FRST_REGISTER_ID, TO_CHAR(A.LAST_UPDT_PNTTM, 'YYYY-MM-DD') LAST_UPDT_PNTTM, A.LAST_UPDUSR_ID, A.REPTIT_SE_CODE, (SELECT USER_NM FROM LETTNEMPLYRINFO WHERE ESNTL_ID = A.SCHDUL_CHARGER_ID) USER_NM FROM LETTNSCHDULINFO A WHERE 1=1 AND A.SCHDUL_KND_CODE = '2' AND (? BETWEEN SUBSTRING(TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDD'), 1, 6) AND SUBSTRING(TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDD'), 1, 6) )
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [selectIndvdlSchdulManageRetrieve:135] - ==> Parameters: 202407(String)
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [selectIndvdlSchdulManageRetrieve:135] - <==      Total: 0
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@646ed900]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@646ed900]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@646ed900]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@646ed900]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@4030f37d]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@4030f37d] after transaction
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [RequestResponseBodyMethodProcessor:120] - Writing [egovframework.com.cmm.service.ResultVO@28b647de]
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 24-07-24 00:08:08[http-nio-8080-exec-6] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-7] [FilterChainProxy:218] - Securing OPTIONS /board?bbsId=BBSMSTR_AAAAAAAAAAAA&pageIndex=1&searchCnd=0&searchWrd=
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-4] [FilterChainProxy:218] - Securing OPTIONS /board?bbsId=BBSMSTR_AAAAAAAAAAAA&pageIndex=1&searchCnd=0&searchWrd=
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-7] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-4] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-7] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-4] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [FilterChainProxy:218] - Securing GET /board?bbsId=BBSMSTR_AAAAAAAAAAAA&pageIndex=1&searchCnd=0&searchWrd=
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [JwtAuthenticationFilter:62] - ===>>> id = admin
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [JwtAuthenticationFilter:70] - jwtToken validated
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [ChangeSessionIdAuthenticationStrategy:99] - Changed session id from B24D564A7564AEB53E32898DDE0C532E
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [FilterChainProxy:333] - Secured GET /board?bbsId=BBSMSTR_AAAAAAAAAAAA&pageIndex=1&searchCnd=0&searchWrd=
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [DispatcherServlet:120] - GET "/board?bbsId=BBSMSTR_AAAAAAAAAAAA&pageIndex=1&searchCnd=0&searchWrd=", parameters={masked}
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [RequestMappingHandlerMapping:522] - Mapped to egovframework.let.cop.bbs.web.EgovBBSManageApiController#selectBoardArticles(Map, LoginVO)
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.bbs.service.impl.EgovBBSAttributeManageServiceImpl.selectBBSMasterInf]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@1909be35] for JDBC transaction
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1909be35] to manual commit
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49b6111]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1909be35] will be managed by Spring
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [selectBBSMasterInf:135] - ==>  Preparing: SELECT a.BBS_ID, a.BBS_TY_CODE, b.CODE_NM as BBS_TY_CODE_NM, a.BBS_INTRCN, a.BBS_ATTRB_CODE, c.CODE_NM as BBS_ATTRB_CODE_NM, a.BBS_NM, a.TMPLAT_ID, a.FILE_ATCH_POSBL_AT, a.ATCH_POSBL_FILE_NUMBER, a.ATCH_POSBL_FILE_SIZE, a.REPLY_POSBL_AT, a.FRST_REGISTER_ID, e.USER_NM as FRST_REGISTER_NM, a.USE_AT, f.USE_AT as BBS_USE_FLAG, TO_CHAR(a.FRST_REGIST_PNTTM, 'YYYY-MM-DD') as FRST_REGIST_PNTTM ,(SELECT IFNULL(USE_AT,'N') FROM LETTNBBSUSE WHERE BBS_ID = ? AND TRGET_ID IN (?, 'SYSTEM_DEFAULT_BOARD') ) as AUTH_FLAG FROM LETTNBBSMASTER a LEFT OUTER JOIN (SELECT CODE_ID, CODE, CODE_NM FROM LETTCCMMNDETAILCODE WHERE CODE_ID = 'COM004' AND USE_AT='Y') b ON a.BBS_TY_CODE = b.CODE LEFT OUTER JOIN (SELECT CODE_ID, CODE, CODE_NM FROM LETTCCMMNDETAILCODE WHERE CODE_ID = 'COM009' AND USE_AT='Y') c ON a.BBS_ATTRB_CODE = c.CODE LEFT OUTER JOIN LETTNEMPLYRINFO e ON a.FRST_REGISTER_ID = e.ESNTL_ID LEFT OUTER JOIN LETTNBBSUSE f ON a.BBS_ID = f.BBS_ID WHERE a.BBS_ID = ?
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [selectBBSMasterInf:135] - ==> Parameters: BBSMSTR_AAAAAAAAAAAA(String), USRCNFRM_00000000000(String), BBSMSTR_AAAAAAAAAAAA(String)
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [selectBBSMasterInf:135] - <==      Total: 1
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49b6111]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49b6111]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49b6111]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49b6111]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@1909be35]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1909be35] after transaction
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.bbs.service.impl.EgovBBSManageServiceImpl.selectBoardArticles]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@3340688c] for JDBC transaction
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3340688c] to manual commit
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68aa7445]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3340688c] will be managed by Spring
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [selectBoardArticleList:135] - ==>  Preparing: SELECT a.NTT_ID, a.NTT_SJ, a.FRST_REGISTER_ID, IFNULL(b.USER_NM, a.NTCR_NM) as FRST_REGISTER_NM, TO_CHAR(a.FRST_REGIST_PNTTM, 'YYYY-MM-DD') as FRST_REGIST_PNTTM, a.RDCNT, a.PARNTSCTT_NO, a.ANSWER_AT, a.ANSWER_LC, a.USE_AT, a.ATCH_FILE_ID, a.BBS_ID, a.NTCE_BGNDE, a.NTCE_ENDDE FROM LETTNBBS a LEFT OUTER JOIN LETTNEMPLYRINFO b ON a.FRST_REGISTER_ID = b.ESNTL_ID WHERE a.USE_AT = 'Y' AND a.BBS_ID = ? AND a.NTT_SJ LIKE '%' || ? || '%' ORDER BY a.SORT_ORDR DESC, NTT_NO ASC LIMIT ? OFFSET ?
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [selectBoardArticleList:135] - ==> Parameters: BBSMSTR_AAAAAAAAAAAA(String), (String), 10(Integer), 0(Integer)
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [selectBoardArticleList:135] - <==      Total: 0
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68aa7445]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [SqlSessionUtils:49] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68aa7445] from current transaction
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [selectBoardArticleListCnt:135] - ==>  Preparing: SELECT COUNT(a.NTT_ID) FROM LETTNBBS a LEFT OUTER JOIN LETTNEMPLYRINFO b ON a.FRST_REGISTER_ID = b.ESNTL_ID WHERE a.USE_AT = 'Y' AND a.BBS_ID = ? AND a.NTT_SJ LIKE '%' || ? || '%'
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [selectBoardArticleListCnt:135] - ==> Parameters: BBSMSTR_AAAAAAAAAAAA(String), (String)
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [selectBoardArticleListCnt:135] - <==      Total: 1
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68aa7445]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68aa7445]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68aa7445]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68aa7445]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@3340688c]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3340688c] after transaction
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [RequestResponseBodyMethodProcessor:120] - Writing [egovframework.com.cmm.service.ResultVO@3671a236]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-10] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [FilterChainProxy:218] - Securing GET /board?bbsId=BBSMSTR_AAAAAAAAAAAA&pageIndex=1&searchCnd=0&searchWrd=
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [JwtAuthenticationFilter:62] - ===>>> id = admin
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [JwtAuthenticationFilter:70] - jwtToken validated
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [FilterChainProxy:333] - Secured GET /board?bbsId=BBSMSTR_AAAAAAAAAAAA&pageIndex=1&searchCnd=0&searchWrd=
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [DispatcherServlet:120] - GET "/board?bbsId=BBSMSTR_AAAAAAAAAAAA&pageIndex=1&searchCnd=0&searchWrd=", parameters={masked}
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [RequestMappingHandlerMapping:522] - Mapped to egovframework.let.cop.bbs.web.EgovBBSManageApiController#selectBoardArticles(Map, LoginVO)
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.bbs.service.impl.EgovBBSAttributeManageServiceImpl.selectBBSMasterInf]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@1e80eda9] for JDBC transaction
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1e80eda9] to manual commit
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@343e1d68]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1e80eda9] will be managed by Spring
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [selectBBSMasterInf:135] - ==>  Preparing: SELECT a.BBS_ID, a.BBS_TY_CODE, b.CODE_NM as BBS_TY_CODE_NM, a.BBS_INTRCN, a.BBS_ATTRB_CODE, c.CODE_NM as BBS_ATTRB_CODE_NM, a.BBS_NM, a.TMPLAT_ID, a.FILE_ATCH_POSBL_AT, a.ATCH_POSBL_FILE_NUMBER, a.ATCH_POSBL_FILE_SIZE, a.REPLY_POSBL_AT, a.FRST_REGISTER_ID, e.USER_NM as FRST_REGISTER_NM, a.USE_AT, f.USE_AT as BBS_USE_FLAG, TO_CHAR(a.FRST_REGIST_PNTTM, 'YYYY-MM-DD') as FRST_REGIST_PNTTM ,(SELECT IFNULL(USE_AT,'N') FROM LETTNBBSUSE WHERE BBS_ID = ? AND TRGET_ID IN (?, 'SYSTEM_DEFAULT_BOARD') ) as AUTH_FLAG FROM LETTNBBSMASTER a LEFT OUTER JOIN (SELECT CODE_ID, CODE, CODE_NM FROM LETTCCMMNDETAILCODE WHERE CODE_ID = 'COM004' AND USE_AT='Y') b ON a.BBS_TY_CODE = b.CODE LEFT OUTER JOIN (SELECT CODE_ID, CODE, CODE_NM FROM LETTCCMMNDETAILCODE WHERE CODE_ID = 'COM009' AND USE_AT='Y') c ON a.BBS_ATTRB_CODE = c.CODE LEFT OUTER JOIN LETTNEMPLYRINFO e ON a.FRST_REGISTER_ID = e.ESNTL_ID LEFT OUTER JOIN LETTNBBSUSE f ON a.BBS_ID = f.BBS_ID WHERE a.BBS_ID = ?
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [selectBBSMasterInf:135] - ==> Parameters: BBSMSTR_AAAAAAAAAAAA(String), USRCNFRM_00000000000(String), BBSMSTR_AAAAAAAAAAAA(String)
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [selectBBSMasterInf:135] - <==      Total: 1
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@343e1d68]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@343e1d68]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@343e1d68]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@343e1d68]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@1e80eda9]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1e80eda9] after transaction
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.bbs.service.impl.EgovBBSManageServiceImpl.selectBoardArticles]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@73ea59d8] for JDBC transaction
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@73ea59d8] to manual commit
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7aa3b998]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@73ea59d8] will be managed by Spring
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [selectBoardArticleList:135] - ==>  Preparing: SELECT a.NTT_ID, a.NTT_SJ, a.FRST_REGISTER_ID, IFNULL(b.USER_NM, a.NTCR_NM) as FRST_REGISTER_NM, TO_CHAR(a.FRST_REGIST_PNTTM, 'YYYY-MM-DD') as FRST_REGIST_PNTTM, a.RDCNT, a.PARNTSCTT_NO, a.ANSWER_AT, a.ANSWER_LC, a.USE_AT, a.ATCH_FILE_ID, a.BBS_ID, a.NTCE_BGNDE, a.NTCE_ENDDE FROM LETTNBBS a LEFT OUTER JOIN LETTNEMPLYRINFO b ON a.FRST_REGISTER_ID = b.ESNTL_ID WHERE a.USE_AT = 'Y' AND a.BBS_ID = ? AND a.NTT_SJ LIKE '%' || ? || '%' ORDER BY a.SORT_ORDR DESC, NTT_NO ASC LIMIT ? OFFSET ?
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [selectBoardArticleList:135] - ==> Parameters: BBSMSTR_AAAAAAAAAAAA(String), (String), 10(Integer), 0(Integer)
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [selectBoardArticleList:135] - <==      Total: 0
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7aa3b998]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [SqlSessionUtils:49] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7aa3b998] from current transaction
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [selectBoardArticleListCnt:135] - ==>  Preparing: SELECT COUNT(a.NTT_ID) FROM LETTNBBS a LEFT OUTER JOIN LETTNEMPLYRINFO b ON a.FRST_REGISTER_ID = b.ESNTL_ID WHERE a.USE_AT = 'Y' AND a.BBS_ID = ? AND a.NTT_SJ LIKE '%' || ? || '%'
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [selectBoardArticleListCnt:135] - ==> Parameters: BBSMSTR_AAAAAAAAAAAA(String), (String)
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [selectBoardArticleListCnt:135] - <==      Total: 1
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7aa3b998]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7aa3b998]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7aa3b998]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7aa3b998]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@73ea59d8]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@73ea59d8] after transaction
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [RequestResponseBodyMethodProcessor:120] - Writing [egovframework.com.cmm.service.ResultVO@36b67630]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-9] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [FilterChainProxy:218] - Securing GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [JwtAuthenticationFilter:62] - ===>>> id = admin
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [JwtAuthenticationFilter:70] - jwtToken validated
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [ChangeSessionIdAuthenticationStrategy:99] - Changed session id from 629728E4024CEE9AC74144C3549D1A64
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [FilterChainProxy:333] - Secured GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [DispatcherServlet:120] - GET "/schedule/month?schdulSe=&year=2024&month=6&date=24", parameters={masked}
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [RequestMappingHandlerMapping:522] - Mapped to egovframework.let.cop.smt.sim.web.EgovIndvdlSchdulManageApiController#EgovIndvdlSchdulManageMonthList(HttpServletRequest, Map, LoginVO)
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl.selectCmmCodeDetail]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@2389cd7b] for JDBC transaction
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2389cd7b] to manual commit
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40434ef]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2389cd7b] will be managed by Spring
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [selectCmmCodeDetail:135] - ==>  Preparing: SELECT CODE_ID, CODE, CODE_NM, CODE_DC FROM LETTCCMMNDETAILCODE WHERE USE_AT = 'Y' AND CODE_ID = ?
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [selectCmmCodeDetail:135] - ==> Parameters: COM030(String)
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [selectCmmCodeDetail:135] - <==      Total: 5
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40434ef]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40434ef]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40434ef]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40434ef]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@2389cd7b]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2389cd7b] after transaction
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.smt.sim.service.impl.EgovIndvdlSchdulManageServiceImpl.selectIndvdlSchdulManageRetrieve]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@2ff9aed2] for JDBC transaction
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2ff9aed2] to manual commit
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@aff448e]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2ff9aed2] will be managed by Spring
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [selectIndvdlSchdulManageRetrieve:135] - ==>  Preparing: SELECT A.SCHDUL_ID, A.SCHDUL_SE, A.SCHDUL_DEPT_ID, A.SCHDUL_KND_CODE, TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDDHH24MI')SCHDUL_BGNDE, TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDDHH24MI')SCHDUL_ENDDE, A.SCHDUL_NM, A.SCHDUL_CN, A.SCHDUL_PLACE, A.SCHDUL_IPCR_CODE, A.SCHDUL_CHARGER_ID, A.ATCH_FILE_ID, TO_CHAR(A.FRST_REGIST_PNTTM, 'YYYY-MM-DD') FRST_REGIST_PNTTM, A.FRST_REGISTER_ID, TO_CHAR(A.LAST_UPDT_PNTTM, 'YYYY-MM-DD') LAST_UPDT_PNTTM, A.LAST_UPDUSR_ID, A.REPTIT_SE_CODE, (SELECT USER_NM FROM LETTNEMPLYRINFO WHERE ESNTL_ID = A.SCHDUL_CHARGER_ID) USER_NM FROM LETTNSCHDULINFO A WHERE 1=1 AND A.SCHDUL_KND_CODE = '2' AND (? BETWEEN SUBSTRING(TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDD'), 1, 6) AND SUBSTRING(TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDD'), 1, 6) )
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [selectIndvdlSchdulManageRetrieve:135] - ==> Parameters: 202407(String)
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [selectIndvdlSchdulManageRetrieve:135] - <==      Total: 0
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@aff448e]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@aff448e]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@aff448e]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@aff448e]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@2ff9aed2]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@2ff9aed2] after transaction
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [RequestResponseBodyMethodProcessor:120] - Writing [egovframework.com.cmm.service.ResultVO@2e39f217]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-1] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [FilterChainProxy:218] - Securing GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [JwtAuthenticationFilter:62] - ===>>> id = admin
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [JwtAuthenticationFilter:70] - jwtToken validated
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [FilterChainProxy:333] - Secured GET /schedule/month?schdulSe=&year=2024&month=6&date=24
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [DispatcherServlet:120] - GET "/schedule/month?schdulSe=&year=2024&month=6&date=24", parameters={masked}
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [RequestMappingHandlerMapping:522] - Mapped to egovframework.let.cop.smt.sim.web.EgovIndvdlSchdulManageApiController#EgovIndvdlSchdulManageMonthList(HttpServletRequest, Map, LoginVO)
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.com.cmm.service.impl.EgovCmmUseServiceImpl.selectCmmCodeDetail]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@59bb66fb] for JDBC transaction
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@59bb66fb] to manual commit
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@255a9860]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@59bb66fb] will be managed by Spring
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [selectCmmCodeDetail:135] - ==>  Preparing: SELECT CODE_ID, CODE, CODE_NM, CODE_DC FROM LETTCCMMNDETAILCODE WHERE USE_AT = 'Y' AND CODE_ID = ?
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [selectCmmCodeDetail:135] - ==> Parameters: COM030(String)
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [selectCmmCodeDetail:135] - <==      Total: 5
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@255a9860]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@255a9860]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@255a9860]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@255a9860]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@59bb66fb]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@59bb66fb] after transaction
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.smt.sim.service.impl.EgovIndvdlSchdulManageServiceImpl.selectIndvdlSchdulManageRetrieve]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@17287052] for JDBC transaction
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@17287052] to manual commit
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66c0634f]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@17287052] will be managed by Spring
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [selectIndvdlSchdulManageRetrieve:135] - ==>  Preparing: SELECT A.SCHDUL_ID, A.SCHDUL_SE, A.SCHDUL_DEPT_ID, A.SCHDUL_KND_CODE, TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDDHH24MI')SCHDUL_BGNDE, TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDDHH24MI')SCHDUL_ENDDE, A.SCHDUL_NM, A.SCHDUL_CN, A.SCHDUL_PLACE, A.SCHDUL_IPCR_CODE, A.SCHDUL_CHARGER_ID, A.ATCH_FILE_ID, TO_CHAR(A.FRST_REGIST_PNTTM, 'YYYY-MM-DD') FRST_REGIST_PNTTM, A.FRST_REGISTER_ID, TO_CHAR(A.LAST_UPDT_PNTTM, 'YYYY-MM-DD') LAST_UPDT_PNTTM, A.LAST_UPDUSR_ID, A.REPTIT_SE_CODE, (SELECT USER_NM FROM LETTNEMPLYRINFO WHERE ESNTL_ID = A.SCHDUL_CHARGER_ID) USER_NM FROM LETTNSCHDULINFO A WHERE 1=1 AND A.SCHDUL_KND_CODE = '2' AND (? BETWEEN SUBSTRING(TO_CHAR(A.SCHDUL_BEGINDE, 'YYYYMMDD'), 1, 6) AND SUBSTRING(TO_CHAR(A.SCHDUL_ENDDE, 'YYYYMMDD'), 1, 6) )
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [selectIndvdlSchdulManageRetrieve:135] - ==> Parameters: 202407(String)
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [selectIndvdlSchdulManageRetrieve:135] - <==      Total: 0
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66c0634f]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66c0634f]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66c0634f]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66c0634f]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@17287052]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@17287052] after transaction
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [RequestResponseBodyMethodProcessor:120] - Writing [egovframework.com.cmm.service.ResultVO@17070982]
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 24-07-24 00:08:11[http-nio-8080-exec-2] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [FilterChainProxy:218] - Securing GET /board?bbsId=BBSMSTR_AAAAAAAAAAAA&pageIndex=1&searchCnd=0&searchWrd=
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [JwtAuthenticationFilter:62] - ===>>> id = admin
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [JwtAuthenticationFilter:70] - jwtToken validated
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [ChangeSessionIdAuthenticationStrategy:99] - Changed session id from D59F0E4B5EB638EA5D601CB4099058BB
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [FilterChainProxy:333] - Secured GET /board?bbsId=BBSMSTR_AAAAAAAAAAAA&pageIndex=1&searchCnd=0&searchWrd=
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [DispatcherServlet:120] - GET "/board?bbsId=BBSMSTR_AAAAAAAAAAAA&pageIndex=1&searchCnd=0&searchWrd=", parameters={masked}
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [RequestMappingHandlerMapping:522] - Mapped to egovframework.let.cop.bbs.web.EgovBBSManageApiController#selectBoardArticles(Map, LoginVO)
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.bbs.service.impl.EgovBBSAttributeManageServiceImpl.selectBBSMasterInf]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@3a774188] for JDBC transaction
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3a774188] to manual commit
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@372fceb1]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3a774188] will be managed by Spring
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [selectBBSMasterInf:135] - ==>  Preparing: SELECT a.BBS_ID, a.BBS_TY_CODE, b.CODE_NM as BBS_TY_CODE_NM, a.BBS_INTRCN, a.BBS_ATTRB_CODE, c.CODE_NM as BBS_ATTRB_CODE_NM, a.BBS_NM, a.TMPLAT_ID, a.FILE_ATCH_POSBL_AT, a.ATCH_POSBL_FILE_NUMBER, a.ATCH_POSBL_FILE_SIZE, a.REPLY_POSBL_AT, a.FRST_REGISTER_ID, e.USER_NM as FRST_REGISTER_NM, a.USE_AT, f.USE_AT as BBS_USE_FLAG, TO_CHAR(a.FRST_REGIST_PNTTM, 'YYYY-MM-DD') as FRST_REGIST_PNTTM ,(SELECT IFNULL(USE_AT,'N') FROM LETTNBBSUSE WHERE BBS_ID = ? AND TRGET_ID IN (?, 'SYSTEM_DEFAULT_BOARD') ) as AUTH_FLAG FROM LETTNBBSMASTER a LEFT OUTER JOIN (SELECT CODE_ID, CODE, CODE_NM FROM LETTCCMMNDETAILCODE WHERE CODE_ID = 'COM004' AND USE_AT='Y') b ON a.BBS_TY_CODE = b.CODE LEFT OUTER JOIN (SELECT CODE_ID, CODE, CODE_NM FROM LETTCCMMNDETAILCODE WHERE CODE_ID = 'COM009' AND USE_AT='Y') c ON a.BBS_ATTRB_CODE = c.CODE LEFT OUTER JOIN LETTNEMPLYRINFO e ON a.FRST_REGISTER_ID = e.ESNTL_ID LEFT OUTER JOIN LETTNBBSUSE f ON a.BBS_ID = f.BBS_ID WHERE a.BBS_ID = ?
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [selectBBSMasterInf:135] - ==> Parameters: BBSMSTR_AAAAAAAAAAAA(String), USRCNFRM_00000000000(String), BBSMSTR_AAAAAAAAAAAA(String)
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [selectBBSMasterInf:135] - <==      Total: 1
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@372fceb1]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@372fceb1]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@372fceb1]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@372fceb1]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@3a774188]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@3a774188] after transaction
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.bbs.service.impl.EgovBBSManageServiceImpl.selectBoardArticles]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@49416f3d] for JDBC transaction
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@49416f3d] to manual commit
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49e1be46]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@49416f3d] will be managed by Spring
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [selectBoardArticleList:135] - ==>  Preparing: SELECT a.NTT_ID, a.NTT_SJ, a.FRST_REGISTER_ID, IFNULL(b.USER_NM, a.NTCR_NM) as FRST_REGISTER_NM, TO_CHAR(a.FRST_REGIST_PNTTM, 'YYYY-MM-DD') as FRST_REGIST_PNTTM, a.RDCNT, a.PARNTSCTT_NO, a.ANSWER_AT, a.ANSWER_LC, a.USE_AT, a.ATCH_FILE_ID, a.BBS_ID, a.NTCE_BGNDE, a.NTCE_ENDDE FROM LETTNBBS a LEFT OUTER JOIN LETTNEMPLYRINFO b ON a.FRST_REGISTER_ID = b.ESNTL_ID WHERE a.USE_AT = 'Y' AND a.BBS_ID = ? AND a.NTT_SJ LIKE '%' || ? || '%' ORDER BY a.SORT_ORDR DESC, NTT_NO ASC LIMIT ? OFFSET ?
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [selectBoardArticleList:135] - ==> Parameters: BBSMSTR_AAAAAAAAAAAA(String), (String), 10(Integer), 0(Integer)
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [selectBoardArticleList:135] - <==      Total: 0
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49e1be46]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [SqlSessionUtils:49] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49e1be46] from current transaction
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [selectBoardArticleListCnt:135] - ==>  Preparing: SELECT COUNT(a.NTT_ID) FROM LETTNBBS a LEFT OUTER JOIN LETTNEMPLYRINFO b ON a.FRST_REGISTER_ID = b.ESNTL_ID WHERE a.USE_AT = 'Y' AND a.BBS_ID = ? AND a.NTT_SJ LIKE '%' || ? || '%'
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [selectBoardArticleListCnt:135] - ==> Parameters: BBSMSTR_AAAAAAAAAAAA(String), (String)
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [selectBoardArticleListCnt:135] - <==      Total: 1
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49e1be46]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49e1be46]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49e1be46]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49e1be46]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@49416f3d]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@49416f3d] after transaction
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [RequestResponseBodyMethodProcessor:120] - Writing [egovframework.com.cmm.service.ResultVO@38986ce5]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-3] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [FilterChainProxy:218] - Securing GET /board?bbsId=BBSMSTR_AAAAAAAAAAAA&pageIndex=1&searchCnd=0&searchWrd=
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [SecurityContextPersistenceFilter:104] - Set SecurityContextHolder to empty SecurityContext
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [JwtAuthenticationFilter:62] - ===>>> id = admin
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [JwtAuthenticationFilter:70] - jwtToken validated
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [EgovJwtTokenUtil:51] - ===>>> secret = egovframe
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [FilterChainProxy:333] - Secured GET /board?bbsId=BBSMSTR_AAAAAAAAAAAA&pageIndex=1&searchCnd=0&searchWrd=
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [DispatcherServlet:120] - GET "/board?bbsId=BBSMSTR_AAAAAAAAAAAA&pageIndex=1&searchCnd=0&searchWrd=", parameters={masked}
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [RequestMappingHandlerMapping:522] - Mapped to egovframework.let.cop.bbs.web.EgovBBSManageApiController#selectBoardArticles(Map, LoginVO)
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.bbs.service.impl.EgovBBSAttributeManageServiceImpl.selectBBSMasterInf]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@7bda8888] for JDBC transaction
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7bda8888] to manual commit
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@71202a74]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7bda8888] will be managed by Spring
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [selectBBSMasterInf:135] - ==>  Preparing: SELECT a.BBS_ID, a.BBS_TY_CODE, b.CODE_NM as BBS_TY_CODE_NM, a.BBS_INTRCN, a.BBS_ATTRB_CODE, c.CODE_NM as BBS_ATTRB_CODE_NM, a.BBS_NM, a.TMPLAT_ID, a.FILE_ATCH_POSBL_AT, a.ATCH_POSBL_FILE_NUMBER, a.ATCH_POSBL_FILE_SIZE, a.REPLY_POSBL_AT, a.FRST_REGISTER_ID, e.USER_NM as FRST_REGISTER_NM, a.USE_AT, f.USE_AT as BBS_USE_FLAG, TO_CHAR(a.FRST_REGIST_PNTTM, 'YYYY-MM-DD') as FRST_REGIST_PNTTM ,(SELECT IFNULL(USE_AT,'N') FROM LETTNBBSUSE WHERE BBS_ID = ? AND TRGET_ID IN (?, 'SYSTEM_DEFAULT_BOARD') ) as AUTH_FLAG FROM LETTNBBSMASTER a LEFT OUTER JOIN (SELECT CODE_ID, CODE, CODE_NM FROM LETTCCMMNDETAILCODE WHERE CODE_ID = 'COM004' AND USE_AT='Y') b ON a.BBS_TY_CODE = b.CODE LEFT OUTER JOIN (SELECT CODE_ID, CODE, CODE_NM FROM LETTCCMMNDETAILCODE WHERE CODE_ID = 'COM009' AND USE_AT='Y') c ON a.BBS_ATTRB_CODE = c.CODE LEFT OUTER JOIN LETTNEMPLYRINFO e ON a.FRST_REGISTER_ID = e.ESNTL_ID LEFT OUTER JOIN LETTNBBSUSE f ON a.BBS_ID = f.BBS_ID WHERE a.BBS_ID = ?
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [selectBBSMasterInf:135] - ==> Parameters: BBSMSTR_AAAAAAAAAAAA(String), USRCNFRM_00000000000(String), BBSMSTR_AAAAAAAAAAAA(String)
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [selectBBSMasterInf:135] - <==      Total: 1
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@71202a74]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@71202a74]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@71202a74]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@71202a74]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@7bda8888]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@7bda8888] after transaction
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [DataSourceTransactionManager:370] - Creating new transaction with name [egovframework.let.cop.bbs.service.impl.EgovBBSManageServiceImpl.selectBoardArticles]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [DataSourceTransactionManager:267] - Acquired Connection [org.hsqldb.jdbc.JDBCConnection@1497dd6a] for JDBC transaction
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [DataSourceTransactionManager:285] - Switching JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1497dd6a] to manual commit
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [SqlSessionUtils:49] - Creating a new SqlSession
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [SqlSessionUtils:49] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ae54042]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [SpringManagedTransaction:49] - JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1497dd6a] will be managed by Spring
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [selectBoardArticleList:135] - ==>  Preparing: SELECT a.NTT_ID, a.NTT_SJ, a.FRST_REGISTER_ID, IFNULL(b.USER_NM, a.NTCR_NM) as FRST_REGISTER_NM, TO_CHAR(a.FRST_REGIST_PNTTM, 'YYYY-MM-DD') as FRST_REGIST_PNTTM, a.RDCNT, a.PARNTSCTT_NO, a.ANSWER_AT, a.ANSWER_LC, a.USE_AT, a.ATCH_FILE_ID, a.BBS_ID, a.NTCE_BGNDE, a.NTCE_ENDDE FROM LETTNBBS a LEFT OUTER JOIN LETTNEMPLYRINFO b ON a.FRST_REGISTER_ID = b.ESNTL_ID WHERE a.USE_AT = 'Y' AND a.BBS_ID = ? AND a.NTT_SJ LIKE '%' || ? || '%' ORDER BY a.SORT_ORDR DESC, NTT_NO ASC LIMIT ? OFFSET ?
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [selectBoardArticleList:135] - ==> Parameters: BBSMSTR_AAAAAAAAAAAA(String), (String), 10(Integer), 0(Integer)
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [selectBoardArticleList:135] - <==      Total: 0
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ae54042]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [SqlSessionUtils:49] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ae54042] from current transaction
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [selectBoardArticleListCnt:135] - ==>  Preparing: SELECT COUNT(a.NTT_ID) FROM LETTNBBS a LEFT OUTER JOIN LETTNEMPLYRINFO b ON a.FRST_REGISTER_ID = b.ESNTL_ID WHERE a.USE_AT = 'Y' AND a.BBS_ID = ? AND a.NTT_SJ LIKE '%' || ? || '%'
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [selectBoardArticleListCnt:135] - ==> Parameters: BBSMSTR_AAAAAAAAAAAA(String), (String)
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [selectBoardArticleListCnt:135] - <==      Total: 1
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [SqlSessionUtils:49] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ae54042]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [SqlSessionUtils:49] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ae54042]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [SqlSessionUtils:49] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ae54042]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [SqlSessionUtils:49] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ae54042]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [DataSourceTransactionManager:740] - Initiating transaction commit
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [DataSourceTransactionManager:330] - Committing JDBC transaction on Connection [org.hsqldb.jdbc.JDBCConnection@1497dd6a]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [DataSourceTransactionManager:389] - Releasing JDBC Connection [org.hsqldb.jdbc.JDBCConnection@1497dd6a] after transaction
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [RequestResponseBodyMethodProcessor:268] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [RequestResponseBodyMethodProcessor:120] - Writing [egovframework.com.cmm.service.ResultVO@2cf53d9c]
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [DispatcherServlet:1131] - Completed 200 OK
+DEBUG 24-07-24 00:08:13[http-nio-8080-exec-8] [SecurityContextPersistenceFilter:120] - Cleared SecurityContextHolder to complete request
+DEBUG 24-07-24 00:11:42[SpringApplicationShutdownHook] [ApplicationAvailabilityBean:77] - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+DEBUG 24-07-24 00:11:42[SpringApplicationShutdownHook] [AnnotationConfigServletWebServerApplicationContext:1051] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2547a286, started on Tue Jul 23 23:56:11 KST 2024
+DEBUG 24-07-24 00:11:42[SpringApplicationShutdownHook] [DefaultLifecycleProcessor:365] - Stopping beans in phase 2147483647
+DEBUG 24-07-24 00:11:42[SpringApplicationShutdownHook] [DefaultLifecycleProcessor:238] - Bean 'webServerGracefulShutdown' completed its stop procedure
+DEBUG 24-07-24 00:11:42[SpringApplicationShutdownHook] [DefaultLifecycleProcessor:365] - Stopping beans in phase 2147483646
+DEBUG 24-07-24 00:11:42[SpringApplicationShutdownHook] [DefaultLifecycleProcessor:238] - Bean 'webServerStartStop' completed its stop procedure
+DEBUG 24-07-24 00:11:42[SpringApplicationShutdownHook] [DefaultLifecycleProcessor:365] - Stopping beans in phase -2147483647
+DEBUG 24-07-24 00:11:42[SpringApplicationShutdownHook] [DefaultLifecycleProcessor:238] - Bean 'springBootLoggingLifecycle' completed its stop procedure
+DEBUG 24-07-24 00:11:42[SpringApplicationShutdownHook] [ThreadPoolTaskExecutor:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+INFO  24-07-24 00:11:42[SpringApplicationShutdownHook] [EmbeddedDatabaseFactory:221] - Shutting down embedded database: url='jdbc:hsqldb:mem:testdb'
+DEBUG 24-07-24 00:11:42[SpringApplicationShutdownHook] [SimpleDriverDataSource:142] - Creating new JDBC Driver Connection to [jdbc:hsqldb:mem:testdb]
