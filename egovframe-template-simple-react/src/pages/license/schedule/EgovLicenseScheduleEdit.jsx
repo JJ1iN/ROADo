@@ -21,10 +21,10 @@ function EgovLicenseScheduleEdit(props) {
     const location = useLocation();
     console.log("EgovLicenseScheduleEdit [location] : ", location);
 
-    const reptitSeCodeRadioGroup = [{ value: "1", label: "당일" }, { value: "2", label: "반복" }, { value: "3", label: "연속" }];
+    const reptitSeCodeRadioGroup = [{ value: "1", label: "예" }, { value: "2", label: "아니오" }];
 
     const [modeInfo, setModeInfo] = useState({ mode: props.mode });
-    const [scheduleDetail, setScheduleDetail] = useState({ schdulDeptName: "관리자부서", schdulChargerName: "관리자", schdulKindCode: 2, reptitSeCode: "1", startDate: new Date(), endDate: new Date() });
+    const [scheduleDetail, setScheduleDetail] = useState({ schdulDeptName: "가산운전면허시험장", schdulChargerName: "관리자", schdulKindCode: 2, reptitSeCode: "1", startDate: new Date(), endDate: new Date() });
     const [boardAttachFiles, setBoardAttachFiles] = useState();
 
     const [schdulBgndeHH, setSchdulBgndeHH] = useState();
@@ -208,39 +208,40 @@ function EgovLicenseScheduleEdit(props) {
                         {/* <!-- 게시판 상세보기 --> */}
                         <div className="board_view2">
                             <dl>
-                                <dt>일정구분<span className="req">필수</span></dt>
+                                <dt>응시종별<span className="req">필수</span></dt>
                                 <dd>
                                     <label className="f_select w_130" htmlFor="schdulSe">
                                         <select id="schdulSe" name="schdulSe" title="일정구분"
                                             value={scheduleDetail.schdulSe}
                                             onChange={(e) => setScheduleDetail({ ...scheduleDetail, schdulSe: e.target.value })}>
                                             <option value="">선택</option>
-                                            <option value="1">회의</option>
-                                            <option value="2">세미나</option>
-                                            <option value="3">강의</option>
-                                            <option value="4">교육</option>
-                                            <option value="5">기타</option>
+                                            <option value="1">1종대형</option>
+                                            <option value="2">1종보통</option>
+                                            <option value="3">1종대형견인</option>
+                                            <option value="4">1종구난</option>
+                                            <option value="5">1종소형견인</option>
+                                            <option value="6">2종보통</option>
+                                            <option value="7">2종소형</option>
                                         </select>
                                     </label>
                                 </dd>
                             </dl>
                             <dl>
-                                <dt>중요도<span className="req">필수</span></dt>
+                                <dt>응시 과목/조건<span className="req">필수</span></dt>
                                 <dd>
                                     <label className="f_select w_130" htmlFor="schdulIpcrCode">
                                         <select id="schdulIpcrCode" name="schdulIpcrCode" title="중요도"
                                             value={scheduleDetail.schdulIpcrCode}
                                             onChange={(e) => setScheduleDetail({ ...scheduleDetail, schdulIpcrCode: e.target.value })}>
                                             <option value="">선택</option>
-                                            <option value="A">높음</option>
-                                            <option value="B">보통</option>
-                                            <option value="C">낮음</option>
+                                            <option value="A">기능</option>
+                                            <option value="B">도로주행</option>
                                         </select>
                                     </label>
                                 </dd>
                             </dl>
                             <dl>
-                                <dt><label htmlFor="schdulDeptName">부서</label><span className="req">필수</span></dt>
+                                <dt><label htmlFor="schdulDeptName">시험장</label><span className="req">필수</span></dt>
                                 <dd>
                                     <input className="f_input2 w_full" type="text" name="schdulDeptName" title="부서" id="schdulDeptName"
                                         value={scheduleDetail.schdulDeptName} readOnly
@@ -248,24 +249,7 @@ function EgovLicenseScheduleEdit(props) {
                                 </dd>
                             </dl>
                             <dl>
-                                <dt><label htmlFor="schdulNm">일정명</label><span className="req">필수</span></dt>
-                                <dd>
-                                    <input className="f_input2 w_full" type="text" name="schdulNm" title="부서" id="schdulNm" placeholder="일정 테스트"
-                                        defaultValue={scheduleDetail.schdulNm}
-                                        onChange={(e) => setScheduleDetail({ ...scheduleDetail, schdulNm: e.target.value })} />
-                                </dd>
-                            </dl>
-                            <dl>
-                                <dt><label htmlFor="schdulCn">일정내용</label><span className="req">필수</span></dt>
-                                <dd>
-                                    <textarea className="f_txtar w_full h_100" name="schdulCn" id="schdulCn" cols="30" rows="10" placeholder="일정내용"
-                                        defaultValue={scheduleDetail.schdulCn}
-                                        onChange={(e) => setScheduleDetail({ ...scheduleDetail, schdulCn: e.target.value })}
-                                    ></textarea>
-                                </dd>
-                            </dl>
-                            <dl>
-                                <dt>반복구분<span className="req">필수</span></dt>
+                                <dt>장애여부<span className="req">필수</span></dt>
                                 <dd>
                                     <EgovRadioButtonGroup
                                         name="reptitSeCode"
@@ -282,7 +266,7 @@ function EgovLicenseScheduleEdit(props) {
                                             selected={scheduleDetail.startDate}
                                             name="schdulBgnde"
                                             className="f_input"
-                                            dateFormat="yyyy-MM-dd HH:mm"
+                                            dateFormat="yyyy-MM-dd"
                                             showTimeInput
                                             onChange={(date) => {
                                                 console.log("setStartDate : ", date);
@@ -292,51 +276,10 @@ function EgovLicenseScheduleEdit(props) {
                                             }} />
                                         <input type="hidden" name="schdulBgndeHH" defaultValue={schdulBgndeHH} readOnly />
                                         <input type="hidden" name="schdulBgndeMM" defaultValue={schdulBgndeMM} readOnly />
-                                        <span className="f_inn_txt">~</span>
-                                    </span>
-                                    <span className="line_break">
-                                        <DatePicker
-                                            selected={scheduleDetail.endDate}
-                                            name="schdulEndde"
-                                            className="f_input"
-                                            dateFormat="yyyy-MM-dd HH:mm"
-                                            showTimeInput
-                                            minDate={scheduleDetail.startDate}
-                                            onChange={(date) => {
-                                                console.log("setEndDate: ", date);
-                                                setScheduleDetail({ ...scheduleDetail, schdulEndde: getDateFourteenDigit(date), schdulEnddeYYYMMDD: getYYYYMMDD(date), schdulEnddeHH: date.getHours(), schdulEnddeMM: date.getMinutes(), endDate: date });
-                                                setSchdulEnddeHH(date.getHours());
-                                                setSchdulEnddeMM(date.getMinutes());
-                                            }
-                                            } />
-                                        <input type="hidden" name="schdulEnddeHH" defaultValue={schdulEnddeHH} readOnly />
-                                        <input type="hidden" name="schdulEnddeMM" defaultValue={schdulEnddeMM} readOnly />
-                                    </span>
+                                    </span>                        
                                 </dd>
                             </dl>
-                            <dl>
-                                <dt><label htmlFor="schdulChargerName">담당자</label><span className="req">필수</span></dt>
-                                <dd>
-                                    <input className="f_input2 w_full" type="text" name="schdulChargerName" id="schdulChargerName" defaultValue="관리자" readOnly
-                                    />
-                                </dd>
-                            </dl>
-                            <EgovAttachFile
-                                fnChangeFile={(attachfile) => {
-                                    console.log("====>>> Changed attachfile file = ", attachfile);
-                                    const arrayConcat = { ...scheduleDetail}; // 기존 단일 파일 업로드에서 다중파일 객체 추가로 변환(아래 for문으로)
-									for ( let i = 0; i < attachfile.length; i++) {
-										arrayConcat[`file_${i}`] = attachfile[i];
-									}
-                                    setScheduleDetail(arrayConcat);
-                                }}
-                                fnDeleteFile={(deletedFile) => {
-                                    console.log("====>>> Delete deletedFile = ", deletedFile);
-                                    setBoardAttachFiles(deletedFile);
-                                }}
-                                boardFiles={boardAttachFiles}
-                                mode={props.mode} />
-
+                            
                             {/* <!-- 버튼영역 --> */}
                             <div className="board_btn_area">
                                 <div className="left_col btn1">
