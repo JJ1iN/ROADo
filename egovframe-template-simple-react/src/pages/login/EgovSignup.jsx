@@ -6,12 +6,17 @@ import * as EgovNet from 'api/egovFetch';
 import URL from 'constants/url';
 import CODE from 'constants/code';
 
+import EgovRadioButtonGroup from 'components/EgovRadioButtonGroup';
+
 function EgovSignup(props) {
     console.group("EgovSignup");
     console.log("[Start] EgovSignup ------------------------------");
     console.log("EgovSignup [props] : ", props);
 
     const navigate = useNavigate();
+
+    const reptitSeCodeRadioGroup = [{ value: "1", label: "남" }, { value: "2", label: "여" }];
+    const [scheduleDetail, setScheduleDetail] = useState({ reptitSeCode: "1" });
 
     useEffect(() => {
 	// eslint-disable-next-line react-hooks/exhaustive-deps
@@ -79,6 +84,16 @@ function EgovSignup(props) {
                                 </dd>
                             </dl>
                             <dl>
+                                <dt>성별<span className="req">필수</span></dt>
+                                <dd>
+                                    <EgovRadioButtonGroup
+                                        name="reptitSeCode"
+                                        radioGroup={reptitSeCodeRadioGroup} 
+                                        setValue={scheduleDetail.reptitSeCode.trim()}
+                                        setter={(v) => setScheduleDetail({ ...scheduleDetail, reptitSeCode: v })} />
+                                </dd>
+                            </dl>
+                            <dl>
                                 <dt><label htmlFor="phone1">전화번호</label><span className="req">필수</span></dt>
                                 <dd>
                                     <input className="f_input2" type="tel" name="phone1" id="phone1" required maxLength="3" />
@@ -112,6 +127,15 @@ function EgovSignup(props) {
                                 <input className="f_input2 w_half" type="password" name="password2" id="password2" required />
                                 </dd>
                             </dl>
+
+                            <br/>
+                            
+                            <ul className="list">
+                                <li>*비밀번호는 8~12자의 영문 대/소문자, 숫자, 특수문자를 혼합해서 사용해야합니다.</li>
+                            </ul>
+
+                            <br/>
+
                             {/* <!-- 버튼영역 --> */}
                             <div className="board_btn_area">
                                 <div className="left_col btn1" style={{ marginBottom: '30px' }}>
